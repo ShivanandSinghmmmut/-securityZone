@@ -209,6 +209,10 @@ footer p{
     opacity: 0.5;
 }
 
+#burger{
+    display: none;
+}
+
 
 @media(max-width:991px)
 {
@@ -229,5 +233,49 @@ footer p{
     }
     .header ul li{
         display: block;
+    }
+    
+    #burger{
+        display: block;
+    }
+
+    .fa-bars{
+        
+        position: absolute;
+        top: 3%;
+        right: 6%;
+        z-index: 15;
+        color: #145314;
+        transform: scale(1.4);
+    }
+
+    nav{
+       
+        width: 70vw;
+        position: fixed;
+        /* right: 0%; */
+        z-index: 10;
+        height: auto;
+        /* right: -600px; */
+        transition: 0.1s ease;
+        top: 6%;
+        height: auto;
+    }
+
+    .middle-section{
+        padding-bottom: 120px;
+        height: auto;
+    }
+
+}
+
+@media(max-width:396px){
+    .text-box h1{
+        font-size: 35px;
+        
+    }
+    .text-box p{
+        font-size: 14px;
+        
     }
 }

@@ -10,7 +10,9 @@
 </head>
 <body>
     <section class="header">
-        <nav>
+        <i class="fa fa-bars" id="burger"></i>
+        <nav id="sidenav">
+            
             <ul>
                 <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
                 <li><a href="#"><i class="fa fa-user"></i>About</a></li>
@@ -22,6 +24,7 @@
                 
                 
             </ul>
+            
         </nav>
         <div class="welcome-box">
             <h1>Welocome to securityZone</h1>
@@ -82,5 +85,24 @@
             </div>
           </footer>
     </section>
+
+    <script>
+        var burger = document.getElementById("burger");
+        var sidenav = document.getElementById("sidenav");
+        sidenav.style.right = "-600px";
+        
+        burger.onclick = function () {
+
+            if (sidenav.style.right == "-600px") {
+                
+                sidenav.style.right = "0";
+                
+
+            } else {
+                sidenav.style.right = "-600px";
+                
+            }
+        }
+    </script>
 </body>
 </html>
